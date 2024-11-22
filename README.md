@@ -107,12 +107,12 @@ Make sure your Flask app is running and can handle requests from Twilio. You can
 2. **Audio Stream**: Twilio streams the audio data to the Flask server in real-time.
 3. **Real-time Transcription**: The audio data is sent to Deepgram's live transcription API for real-time transcription.
 4. **Callwise API**: The transcribed text is sent to the Callwise API to get context-based responses.
-5. **Response Handling**: Based on the transcription and the response from the RAG API, the server can send a dynamic response back to the user.
+5. **Response Handling**: Based on the transcription and the response from the CallWise API, the server can send a dynamic response back to the user.
 
 ## Troubleshooting
 - If you're facing issues with Twilio integration, ensure that your Twilio number is correctly configured to forward calls to the Flask server endpoint.
 - If the transcription is not accurate, check your Deepgram API key and ensure the correct language model is being used.
-- For any errors with the RAG API, verify the endpoint URL and the data being sent.
+
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
