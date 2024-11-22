@@ -1,0 +1,31 @@
+eval_dataset:
+  name: general_knowledge_data
+  path: data/eval_data.csv
+
+llms:
+  - name: sncloud-llama3.1-405
+    model_type: "sncloud"
+    model_name: "Meta-Llama-3.1-405B-Instruct"
+    max_tokens: 1024
+    temperature: 0.0
+  - name: sambastudio-llama2-70
+    model_type: "sambastudio"
+    model_name: "llama-2-70b-chat-hf"
+    max_tokens: 1024
+    temperature: 0.0
+  - name: sncloud-llama3.1-70
+    model_type: "sncloud"
+    model_name: "Meta-Llama-3.1-70B-Instruct"
+    max_tokens: 1024
+    temperature: 0.0
+  - name: sncloud-llama3.2-3
+    model_type: "sncloud"
+    model_name: "Meta-Llama-3.2-3B-Instruct"
+    max_tokens: 1024
+    temperature: 0.0
+
+eval_llm:
+  model_type: "sncloud"
+  model_name: "Meta-Llama-3.1-405B-Instruct"
+  max_tokens: 1024
+  temperature: 0.0

@@ -1,0 +1,7 @@
+Flask==2.2.3
+flask-sock==0.2.1
+twilio==7.14.0
+python-dotenv==1.0.0
+requests==2.31.0
+deepgram-sdk==2.1.0
+websocket-client==1.6.1

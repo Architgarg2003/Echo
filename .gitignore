@@ -1,0 +1,32 @@
+# Python virtual environment
+venv/
+*.env
+
+# Environment variables file
+.env
+
+# IDE specific files
+.vscode/
+.idea/
+
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+
+# Distribution and packaging
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Flask specific
+instance/
+*.db
+*.sqlite
+
+# Logs
+*.log
+
+# Local configuration files
+*.local

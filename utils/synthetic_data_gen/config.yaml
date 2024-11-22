@@ -1,0 +1,29 @@
+llm: 
+  "api": "sambastudio"  # set either sambastudio, sncloud
+  "do_sample": False
+  "temperature": 0.01
+  "max_tokens_to_generate": 2048
+  "bundle": True #set as true if using Sambastudio Bundle endpoint
+  "select_expert": "Meta-Llama-3-70B-Instruct-4096" 
+  #sncloud expert name -> "llama3-405b"
+
+embedding_model: 
+    "type": "cpu" # set either sambastudio or cpu
+    "batch_size": 1 #set depending of your endpoint configuration (1 if Bundle embedding expert)
+    "bundle": True #set true if using Sambastudio embeddings in a Bundle endpoint 
+    "select_expert": "e5-mistral-7b-instruct" #set if using SambaStudio Bundle embedding expert
+
+prompts: 
+    "generate_qa_prompt": "prompts/generate_Q&A.yaml"
+
+splitting: 
+  breakpoint_threshold_amount: 80
+  min_doc_length: 80
+
+generation:
+  output_path: "./output/synthetic_data.jsonl"
+  amount_per_document: 5
+  include_context: true
+  include_thoughts: true
+  include_references: true
+  system_prompt: "You are a helpful assistant for question-answering tasks.\n"
