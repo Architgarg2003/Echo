@@ -1,6 +1,6 @@
 # Real-Time Phone Call Transcription Service
 
-This is a real-time phone call transcription service that integrates **Twilio** for voice streaming and **Deepgram** for live transcription. The system listens to incoming phone calls, transcribes the audio in real-time, and provides a response to the user based on the transcript using a **RAG (Retrieval-Augmented Generation)** API.
+This is a real-time phone call transcription service that integrates **Twilio** for voice streaming and **Deepgram** for live transcription. The system listens to incoming phone calls, transcribes the audio in real-time, and provides a response to the user based on the transcript using a **CallWise** API.
 
 ## Features
 - **Real-time Transcription**: The call audio is transcribed in real-time using Deepgram's live transcription API.
