@@ -36,7 +36,7 @@ TWILIO_NUMBER = os.environ['TWILIO_NUMBER']
 DEEPGRAM_API_KEY = os.environ['DEEPGRAM_API_KEY']
 
 # Endpoint for RAG query
-RAG_QUERY_URL = 'http://127.0.0.1:5001/rag_query'
+RAG_QUERY_URL = 'http://206.189.138.143:5000/rag_query'
 
 app = Flask(__name__)
 sock = Sock(app)
